@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>helperMe</name>
-	<description>help others</description>
+	<description>help others,through case</description>
 
 
 	<properties>
