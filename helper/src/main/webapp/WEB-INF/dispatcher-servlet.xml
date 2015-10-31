@@ -1,9 +1,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:p="http://www.springframework.org/schema/p" 
-	xmlns:tx="http://www.springframework.org/schema/tx"
-	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans     
         http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -35,17 +33,17 @@
     
 	<!--  jpa configure -->
 
-	 <bean id="entityManagerFactory"
- 		 class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean"
- 		 p:persistenceUnitName="fruitpay" />
+<!-- 	<bean id="entityManagerFactory" -->
+<!--  		 class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean" -->
+<!--  		 p:persistenceUnitName="fruitpay" /> -->
 
- 	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+<!--  	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" /> -->
  
-	 <bean id="transactionManager"
-		  class="org.springframework.orm.jpa.JpaTransactionManager"
- 		  p:entityManagerFactory-ref="entityManagerFactory" />
+<!-- 	<bean id="transactionManager" -->
+<!-- 		  class="org.springframework.orm.jpa.JpaTransactionManager" -->
+<!--  		  p:entityManagerFactory-ref="entityManagerFactory" /> -->
   
-	 <tx:annotation-driven transaction-manager="transactionManager" />
+<!-- 	<tx:annotation-driven transaction-manager="transactionManager" /> -->
 	 
 
 </beans>
